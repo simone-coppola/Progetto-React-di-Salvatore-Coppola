@@ -1,0 +1,133 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header.menu-open {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.HeaderTop {
+  display: none;
+}
+
+.LogoAndDate {
+  display: none;
+}
+
+.Header.menu-open .HeaderTop {
+  display: flex;
+  order: 3;
+}
+
+.Header.menu-open .LogoAndDate {
+  display: none;
+}
+
+.Header.menu-open .MobileNavbar,
+.Header.menu-open .navbar {
+  order: 1;
+}
+
+.HeaderTop .Language {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0 0 0 1rem;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.HeaderTop .Language li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px 7px 0;
+  margin: 1rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4375rem;
+  color: #5a5a5a;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 1024px) {
+  .HeaderTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 15px 8px;
+    margin: 0;
+  }
+
+  .HeaderTop .Language {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .HeaderTop .Language li {
+    font-size: 11px;
+    color: #121212;
+    cursor: pointer;
+    padding: 7px 8px 6px;
+  }
+
+  .HeaderButton button {
+    background-color: #567b95;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid rgb(50, 104, 145);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .HeaderButton .SubscribeButton {
+    margin-right: 7px;
+  }
+
+  .HeaderButton .LoginButton {
+    margin-left: 7px;
+  }
+
+  .search {
+    cursor: pointer;
+    padding: 8px 9px 9px;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+  }
+
+  section.LogoAndDate {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    margin: 0;
+  }
+
+  .LinkAndDate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .PaperLink {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #121212;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .Logo {
+    font-family: "Old English Text MT", "Blackletter", serif;
+    font-size: 60px;
+    margin: 0;
+  }
+}

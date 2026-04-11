@@ -1,0 +1,86 @@
+.AccountFooter {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .AccountFooter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .FirstSection {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .SecondSection {
+    margin-top: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+    font-weight: 400;
+    width: auto;
+    height: 23px;
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+
+  .AccountFooter li {
+    list-style: none;
+    display: flex;
+  }
+
+  .AccountFooter h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    margin-bottom: 0.2rem;
+    font-size: 13px;
+    font-weight: bold;
+    width: auto;
+    height: 25px;
+    line-height: 15px;
+    margin: 0;
+  }
+
+  .BoldList {
+    margin-bottom: 10px;
+  }
+
+  .BoldList li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    width: auto;
+    height: 25px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+
+  .BoldList span {
+    font-family: "Old English Text MT", "Blackletter", serif;
+    height: 13px;
+    width: 13px;
+  }
+
+  .FooterIcon {
+    width: 13px;
+    height: 13px;
+  }
+
+  .RegularList li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+    font-weight: 400;
+    width: auto;
+    height: 23px;
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+}

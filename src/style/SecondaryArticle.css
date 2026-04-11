@@ -1,0 +1,121 @@
+.secondary-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary-card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 0.5rem 0;
+}
+
+.secondary-card h3 {
+  font-size: 0.9rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: #121212;
+}
+
+.secondary-card p {
+  font-size: 0.85rem;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+  margin: 0.25rem 0 0;
+  color: #5a5a5a;
+}
+
+.secondary-center {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  font-family: Georgia, "Times New Roman", serif;
+  padding: 1rem 0;
+}
+
+.secondary-center h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0.5rem 0;
+  color: #121212;
+}
+
+.secondary-center p {
+  font-size: 0.85rem;
+  line-height: 1.2;
+  margin: 0.25rem 0 0;
+  color: #5a5a5a;
+}
+
+.secondary-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 1024px) {
+  .secondary-container {
+    padding: 1.25rem 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+  }
+
+  .secondary-left,
+  .secondary-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .secondary-card {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 0.5rem 0;
+  }
+
+  .secondary-card h3 {
+    font-size: 0.9rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    color: #121212;
+  }
+
+  .secondary-card p {
+    font-size: 0.85rem;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.2;
+    margin: 0.25rem 0 0;
+    color: #5a5a5a;
+  }
+
+  .secondary-center {
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 0 1rem;
+    border-bottom: none;
+  }
+
+  .secondary-center h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0.5rem 0;
+    color: #121212;
+  }
+
+  .secondary-center p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin: 0.25rem 0 0;
+    color: #5a5a5a;
+  }
+
+  .secondary-image {
+    width: 100%;
+    height: auto;
+  }
+}
