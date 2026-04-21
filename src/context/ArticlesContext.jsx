@@ -21,6 +21,8 @@ export function ArticlesProvider({ children }) {
           axios.get(TOP_STORIES_URL, { params: { "api-key": API_KEY } }),
           axios.get(MOST_POPULAR_URL, { params: { "api-key": API_KEY } }),
         ]);
+          console.log("Top Stories:", topRes.data.results);
+          console.log("Most Popular:", popularRes.data.results); 
         setTopStories(topRes.data.results);
         setMostPopular(popularRes.data.results);
       } catch (err) {
@@ -43,6 +45,7 @@ export function ArticlesProvider({ children }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useArticles() {
   return useContext(ArticlesContext);
 }

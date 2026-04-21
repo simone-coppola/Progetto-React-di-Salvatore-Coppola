@@ -11,6 +11,11 @@
   line-height: 2rem;
 }
 
+.main-text h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .main-text p {
   font-size: 0.75rem;
   font-family: Georgia, "Times New Roman", serif;

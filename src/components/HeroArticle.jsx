@@ -6,7 +6,11 @@ function Hero({ article }) {
   return (
     <div className="hero-card">
       <div className="hero-text">
-        <h1>{article.title}</h1>
+        <h1>
+          <a href={article.url} target="_blank" rel="noopener noreferrer">
+            {article.title}
+          </a>
+        </h1>
         <p>{article.abstract}</p>
       </div>
 

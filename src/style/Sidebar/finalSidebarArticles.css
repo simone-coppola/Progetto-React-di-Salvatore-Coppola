@@ -20,6 +20,11 @@
   color: #121212;
 }
 
+.finalSidebarText h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .finalSidebarText p {
   font-size: 0.7rem;
   font-family: Georgia, "Times New Roman", serif;

@@ -12,7 +12,11 @@ function Secondary({ articles }) {
       <div className="secondary-left">
         {leftArticles.map((article) => (
           <div key={article.url} className="secondary-card">
-            <h3>{article.title}</h3>
+            <h3>
+              <a href={article.url} target="_blank" rel="noopener noreferrer">
+                {article.title}
+              </a>
+            </h3>
             <p>{article.abstract}</p>
           </div>
         ))}
@@ -25,7 +29,15 @@ function Secondary({ articles }) {
             alt={firstWithImage.title}
             className="secondary-image"
           />
-          <h3>{firstWithImage.title}</h3>
+          <h3>
+            <a
+              href={firstWithImage.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {firstWithImage.title}
+            </a>
+          </h3>
           <p>{firstWithImage.abstract}</p>
         </div>
       )}
@@ -33,7 +45,11 @@ function Secondary({ articles }) {
       <div className="secondary-right">
         {rightArticles.map((article) => (
           <div key={article.url} className="secondary-card">
-            <h3>{article.title}</h3>
+            <h3>
+              <a href={article.url} target="_blank" rel="noopener noreferrer">
+                {article.title}
+              </a>
+            </h3>
             <p>{article.abstract}</p>
           </div>
         ))}

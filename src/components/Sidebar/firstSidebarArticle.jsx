@@ -14,7 +14,11 @@ function FirstSidebarArticle({ article }) {
           />
 
           <div className="firstSidebarText">
-            <h3>{article.title}</h3>
+            <h3>
+              <a href={article.url} target="_blank" rel="noopener noreferrer">
+                {article.title}
+              </a>
+            </h3>
             <p>{article.abstract}</p>
           </div>
         </>

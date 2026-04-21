@@ -11,6 +11,11 @@
   line-height: 2rem;
 }
 
+.hero-text h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .hero-text p {
   display: none;
 }
@@ -48,6 +53,7 @@
   }
 
   .hero-text p {
+    display: block;
     font-size: 0.95rem;
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.3;

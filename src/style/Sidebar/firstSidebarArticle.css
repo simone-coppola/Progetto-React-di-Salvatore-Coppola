@@ -21,6 +21,11 @@
   color: #121212;
 }
 
+.firstSidebarArticle h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .firstSidebarArticle p {
   font-size: 0.75rem;
   font-family: Georgia, "Times New Roman", serif;

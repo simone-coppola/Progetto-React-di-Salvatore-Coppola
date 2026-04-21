@@ -21,6 +21,11 @@
   color: #121212;
 }
 
+.thirdSidebarCard h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .thirdSidebarCard p {
   font-size: 0.75rem;
   font-family: Georgia, "Times New Roman", serif;

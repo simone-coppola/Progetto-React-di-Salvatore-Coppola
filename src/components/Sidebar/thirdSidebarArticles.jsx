@@ -6,7 +6,11 @@ function ThirdSidebarArticles({ articles }) {
       {articles.map((article) => (
         <div key={article.url} className="thirdSidebarCard">
           <div className="thirdSidebarText">
-            <h2>{article.title}</h2>
+            <h2>
+              <a href={article.url} target="_blank" rel="noopener noreferrer">
+                {article.title}
+              </a>
+            </h2>
           </div>
 
           {article.media?.[0]?.["media-metadata"]?.[2]?.url && (
