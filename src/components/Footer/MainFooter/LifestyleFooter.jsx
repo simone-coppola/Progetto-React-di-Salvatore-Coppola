@@ -1,8 +1,16 @@
+import {useFooter} from "../../../context/FooterContext";
+
 function LifestyleFooter() {
+    const { openSection, setOpenSection } = useFooter();
+
+    const toggleSection = () => {
+        setOpenSection((prev) => (prev === "lifestyle" ? null : "lifestyle"));
+    };
+
     return(
         <div className="LifestyleFooter">
-            <h3>LIFESTYLE</h3>
-            <ul>
+            <h3 onClick={toggleSection}>LIFESTYLE</h3>
+            <ul className={openSection === "lifestyle" ? "open" : ""}>
                 <li>Health</li>
                 <li>Well</li>
                 <li>Food</li>

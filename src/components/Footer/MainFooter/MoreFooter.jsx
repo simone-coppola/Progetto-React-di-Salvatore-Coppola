@@ -1,8 +1,16 @@
+import {useFooter} from "../../../context/FooterContext";
+
 function MoreFooter() {
+    const { openSection, setOpenSection } = useFooter();
+
+    const toggleSection = () => {
+        setOpenSection((prev) => (prev === "more" ? null : "more"));
+    };
+
     return(
         <div className="MoreFooter">
-            <h3>MORE</h3>
-            <ul>
+            <h3 onClick={toggleSection}>MORE</h3>
+            <ul className={openSection === "more" ? "open" : ""}>
                 <li>Audio</li>
                 <li>Games</li>
                 <li>Cooking</li>

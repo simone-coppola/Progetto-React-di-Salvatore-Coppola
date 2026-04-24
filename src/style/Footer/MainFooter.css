@@ -6,6 +6,13 @@
   display: none;
 }
 
+.MainFooter ul.open {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  padding: 0;
+}
+
 .MainFooter section {
   cursor: pointer;
   margin: 0px;
@@ -14,7 +21,8 @@
   font-family: helvetica, arial, sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
-  height: 2.5rem;
+  min-height: 2.5rem;
+  height: auto;
   letter-spacing: 0.04rem;
   line-height: 2.5rem;
 }
@@ -65,5 +73,9 @@
     height: 23px;
     line-height: 16px;
     margin: 0;
+  }
+
+  .MainFooter ul.open {
+    display: block;
   }
 }

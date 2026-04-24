@@ -1,8 +1,16 @@
+import {useFooter} from "../../../context/FooterContext";
+
 function ArtsFooter() {
+    const { openSection, setOpenSection } = useFooter();
+
+    const toggleSection = () => {
+        setOpenSection((prev) => (prev === "arts" ? null : "arts"));
+    };
+
     return(
         <div className="ArtsFooter">
-            <h3>ARTS</h3>
-            <ul>
+            <h3 onClick={toggleSection}>ARTS</h3>
+            <ul className={openSection === "arts" ? "open" : ""}>
                 <li>Book Review</li>
                 <li>Best Sellers Book List</li>
                 <li>Dance</li>

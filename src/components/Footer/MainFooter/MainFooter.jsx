@@ -4,9 +4,12 @@ import OpinionFooter from "./OpinionFooter";
 import LifestyleFooter from "./LifestyleFooter";
 import MoreFooter from "./MoreFooter";
 import NewsFooter from "./NewsFooter";
+import { FooterProvider } from "../../../context/FooterContext";
 
 function MainFooter() {
+
     return (
+        <FooterProvider>
         <div className="MainFooter">
 
             <div className="MainContainer">
@@ -34,6 +37,7 @@ function MainFooter() {
             </div>
 
         </div>
+        </FooterProvider>
     )
 }
 

@@ -1,8 +1,15 @@
+import {useFooter} from "../../../context/FooterContext";
+
 function NewsFooter() {
+    const { openSection, setOpenSection } = useFooter();
+
+    const toggleSection = () => {
+        setOpenSection((prev) => (prev === "news" ? null : "news"));
+    };
     return(
         <div className="NewsFooter">
-            <h3>NEWS</h3>
-            <ul>
+            <h3 onClick={toggleSection}>NEWS</h3>
+            <ul className={openSection === "news" ? "open" : ""}>
                 <li>Home Page</li>
                 <li>U.S.</li>
                 <li>World</li>
