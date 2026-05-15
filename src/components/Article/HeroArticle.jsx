@@ -4,12 +4,10 @@ function Hero({ article }) {
   if (!article) return null;
 
   return (
-    <div className="hero-card">
+  <div className="hero-card" onClick={() => window.open(article.url, '_blank', 'noopener,noreferrer')}>
       <div className="hero-text">
         <h1>
-          <a href={article.url} target="_blank" rel="noopener noreferrer">
-            {article.title}
-          </a>
+              {article.title}
         </h1>
         <p>{article.abstract}</p>
       </div>

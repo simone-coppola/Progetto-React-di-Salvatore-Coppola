@@ -45,6 +45,7 @@
   .main-text {
     grid-column: span 5;
     margin: 0;
+    cursor: pointer;
   }
 
   .main-text h2 {
@@ -70,5 +71,6 @@
     height: auto;
     object-fit: cover;
     border-bottom: none;
+    cursor: pointer;
   }
 }

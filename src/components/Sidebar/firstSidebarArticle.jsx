@@ -4,7 +4,7 @@ function FirstSidebarArticle({ article }) {
   if (!article) return null;
 
   return (
-    <div className="firstSidebarArticle">
+    <div className="firstSidebarArticle" onClick={() => window.open(article.url, '_blank', 'noopener,noreferrer')}>
       {article.media?.[0]?.["media-metadata"]?.[2]?.url && (
         <>
           <img
@@ -15,9 +15,7 @@ function FirstSidebarArticle({ article }) {
 
           <div className="firstSidebarText">
             <h3>
-              <a href={article.url} target="_blank" rel="noopener noreferrer">
                 {article.title}
-              </a>
             </h3>
             <p>{article.abstract}</p>
           </div>

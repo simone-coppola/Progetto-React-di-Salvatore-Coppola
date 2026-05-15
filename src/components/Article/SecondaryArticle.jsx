@@ -11,11 +11,9 @@ function Secondary({ articles }) {
     <div className="secondary-container">
       <div className="secondary-left">
         {leftArticles.map((article) => (
-          <div key={article.url} className="secondary-card">
+          <div key={article.url} className="secondary-card" onClick={() => window.open(article.url, '_blank', 'noopener,noreferrer')}>
             <h3>
-              <a href={article.url} target="_blank" rel="noopener noreferrer">
                 {article.title}
-              </a>
             </h3>
             <p>{article.abstract}</p>
           </div>
@@ -23,20 +21,14 @@ function Secondary({ articles }) {
       </div>
 
       {firstWithImage && (
-        <div className="secondary-center">
+        <div className="secondary-center" onClick={() => window.open(firstWithImage.url, '_blank', 'noopener,noreferrer')}>
           <img
             src={firstWithImage.multimedia[0].url}
             alt={firstWithImage.title}
             className="secondary-image"
           />
           <h3>
-            <a
-              href={firstWithImage.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {firstWithImage.title}
-            </a>
+            {firstWithImage.title}
           </h3>
           <p>{firstWithImage.abstract}</p>
         </div>
@@ -44,11 +36,9 @@ function Secondary({ articles }) {
 
       <div className="secondary-right">
         {rightArticles.map((article) => (
-          <div key={article.url} className="secondary-card">
+          <div key={article.url} className="secondary-card" onClick={() => window.open(article.url, '_blank', 'noopener,noreferrer')}>
             <h3>
-              <a href={article.url} target="_blank" rel="noopener noreferrer">
                 {article.title}
-              </a>
             </h3>
             <p>{article.abstract}</p>
           </div>

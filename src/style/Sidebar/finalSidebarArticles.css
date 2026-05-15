@@ -50,6 +50,7 @@
     flex-direction: column;
     gap: 0.4rem;
     border-bottom: none;
+    cursor: pointer;
   }
 
   .finalSidebarText h2 {

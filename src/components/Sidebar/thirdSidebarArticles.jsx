@@ -4,12 +4,10 @@ function ThirdSidebarArticles({ articles }) {
   return (
     <div className="thirdSidebarArticles">
       {articles.map((article) => (
-        <div key={article.url} className="thirdSidebarCard">
+        <div key={article.url} className="thirdSidebarCard" onClick={() => window.open(article.url, '_blank', 'noopener,noreferrer')}>
           <div className="thirdSidebarText">
             <h2>
-              <a href={article.url} target="_blank" rel="noopener noreferrer">
                 {article.title}
-              </a>
             </h2>
           </div>
 

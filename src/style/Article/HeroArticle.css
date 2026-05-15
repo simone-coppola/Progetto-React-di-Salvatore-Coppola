@@ -41,6 +41,7 @@
   .hero-text {
     grid-column: span 5;
     margin: 0;
+    cursor: pointer;
   }
 
   .hero-text h2 {
@@ -67,5 +68,6 @@
     height: auto;
     object-fit: cover;
     border-bottom: none;
+    cursor: pointer;
   }
 }

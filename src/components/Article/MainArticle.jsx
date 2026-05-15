@@ -4,12 +4,10 @@ function Main({ articles }) {
   return (
     <>
       {articles.map((article) => (
-        <div key={article.url} className="main-card">
+        <div key={article.url} className="main-card" onClick={() => window.open(article.url, '_blank', 'noopener,noreferrer')}>
           <div className="main-text">
             <h2>
-              <a href={article.url} target="_blank" rel="noopener noreferrer">
                 {article.title}
-              </a>
             </h2>
             <p>{article.abstract}</p>
           </div>

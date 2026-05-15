@@ -46,7 +46,7 @@ function Scroll({ articles }) {
 
       <div className="scroll-wrapper">
         {visibleArticles.map((article) => (
-          <div key={article.url} className="scroll-card">
+          <div key={article.url} className="scroll-card" onClick={() => window.open(article.url, '_blank', 'noopener,noreferrer')}>
             {article.multimedia?.[2]?.url && (
               <img
                 src={article.multimedia[2].url}
@@ -57,9 +57,7 @@ function Scroll({ articles }) {
 
             <div className="scroll-text">
               <h2>
-                <a href={article.url} target="_blank" rel="noopener noreferrer">
                   {article.title}
-                </a>
               </h2>
             </div>
           </div>

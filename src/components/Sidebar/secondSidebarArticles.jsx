@@ -4,12 +4,10 @@ function SecondSidebarArticles({ articles }) {
   return (
     <div className="secondSidebarArticles">
       {articles.map((article) => (
-        <div key={article.url} className="secondSidebarCard">
+        <div key={article.url} className="secondSidebarCard" onClick={() => window.open(article.url, '_blank', 'noopener,noreferrer')}>
           <div className="secondSidebarText">
             <h3>
-              <a href={article.url} target="_blank" rel="noopener noreferrer">
                 {article.title}
-              </a>
             </h3>
           </div>
         </div>
