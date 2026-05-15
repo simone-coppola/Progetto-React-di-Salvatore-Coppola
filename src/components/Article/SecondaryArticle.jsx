@@ -1,4 +1,4 @@
-import "../style/SecondaryArticle.css";
+import "../../style/Article/SecondaryArticle.css";
 
 function Secondary({ articles }) {
   const firstWithImage = articles.find((a) => a.multimedia?.[0]?.url);

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../style/ScrollArticle.css";
+import "../../style/Article/ScrollArticle.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 

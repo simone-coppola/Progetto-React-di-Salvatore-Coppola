@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "./components/Header";
-import ArticleCard from "./components/ArticleCard";
+import Header from "./components/Header/Header";
+import ArticleCard from "./components/Article/ArticleCard";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Footer from "./components/Footer/Footer";
 import { MenuProvider } from "./context/MenuContext";

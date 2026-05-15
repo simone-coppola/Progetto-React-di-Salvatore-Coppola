@@ -1,4 +1,4 @@
-import "../style/HeroArticle.css";
+import "../../style/Article/HeroArticle.css";
 
 function Hero({ article }) {
   if (!article) return null;

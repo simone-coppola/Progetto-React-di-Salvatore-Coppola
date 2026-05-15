@@ -55,6 +55,11 @@
 }
 
 @media (min-width: 1024px) {
+
+  .Header {
+    border-bottom: 1px solid #000;
+  }
+
   .HeaderTop {
     display: flex;
     justify-content: space-between;

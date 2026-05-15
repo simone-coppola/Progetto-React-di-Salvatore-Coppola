@@ -1,8 +1,8 @@
-import "../style/Header.css";
+import "../../style/Header/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import Navbar from "./Navbar";
-import { useMenu } from "../context/MenuContext";
+import Navbar from "./Navbar/Navbar";
+import { useMenu } from "../../context/MenuContext";
 
 const today = new Date().toLocaleDateString("en-US", {
   weekday: "long",

@@ -2,7 +2,7 @@ import Hero from "./HeroArticle";
 import Main from "./MainArticle";
 import Secondary from "./SecondaryArticle";
 import Scroll from "./ScrollArticle";
-import { useArticles } from "../context/ArticlesContext";
+import { useArticles } from "../../context/ArticlesContext";
 
 function ArticleCard() {
   const { topStories, loading, error } = useArticles();
