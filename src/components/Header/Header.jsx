@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./Navbar/Navbar";
 import { useMenu } from "../../context/MenuContext";
+import { Link } from "react-router-dom";
 
 const today = new Date().toLocaleDateString("en-US", {
   weekday: "long",
@@ -48,7 +49,9 @@ function Header() {
               Today's paper
             </a>
           </div>
-          <h1 className="Logo">The New York Times</h1>
+          <Link to="/" className="LogoLink">
+            <h1>The New York Times</h1>
+          </Link>
         </section>
       )}
 

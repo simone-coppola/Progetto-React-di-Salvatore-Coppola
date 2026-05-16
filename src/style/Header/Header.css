@@ -130,9 +130,11 @@
     text-decoration: none;
   }
 
-  .Logo {
+  .LogoLink {
     font-family: "Old English Text MT", "Blackletter", serif;
-    font-size: 60px;
+    font-size: 1.8rem;
     margin: 0;
+    text-decoration: none;
+    color: inherit;
   }
 }
